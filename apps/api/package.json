@@ -1,0 +1,35 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "dist/server.js",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node dist/server.js",
+    "build": "tsc",
+    "prisma:generate": "turbo run db:generate --filter=db"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/async": "^3.2.24",
+    "@types/errorhandler": "^1.5.3",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.2",
+    "async": "^3.2.6",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@repo/schema": "workspace:*",
+    "@repo/db": "workspace:*",
+    "dotenv": "^16.4.7",
+    "errorhandler": "^1.5.1",
+    "express": "^4.21.2",
+    "zod": "^3.24.1"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "@repo/schema",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc --watch",
+    "build": "tsc"
+  },
+  "exports": {
+    "./zodSchema": {
+      "types": "./zodSchema.ts",
+      "default": "./dist/zodSchema.js"
+    }
+  },
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "zod": "^3.24.1"
+  }
+}
